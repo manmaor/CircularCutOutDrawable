@@ -5,13 +5,13 @@ plugins {
 
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion "android-S"
     buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.example.firebaseabtest"
         minSdkVersion 28
-        targetSdkVersion 30
+        targetSdkVersion "S"
         versionCode 1
         versionName "1.0"
 
@@ -52,6 +52,8 @@ dependencies {
     implementation platform('com.google.firebase:firebase-bom:28.1.0')
     implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation 'com.google.firebase:firebase-config-ktx'
+
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9'
 }
 
 apply plugin: 'com.google.gms.google-services'
